@@ -1,38 +1,173 @@
-.App {
+/* General Body Styling */
+body {
+  font-family: 'Manrope', Raleway;
+  background: linear-gradient(45deg, #131430, rgba(35, 19, 48, 0.941));
+  color: #ffffff;
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Wrapper Styling */
+.wrapper {
+  max-width: 400px;
+  padding: 20px;
+  border-radius: 20px;
+  background-color: rgba(66,57,110,0.361);
+  box-shadow: 0 10px 10px rgba(5, 75, 255, 0.3);
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Profile Picture Container */
+.profile-picture-container {
+  width: 120px;
+  height: 120px;
+  margin: 0 auto 1rem;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 5px solid rgba(5, 75, 255, 0.5); 
+  box-shadow: 0 10px 20px rgba(5, 75, 255, 0.3);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.profile-picture {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+/* Profile Name */
+.profile-name {
+  font-size: 1.7rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+/* Profile Description */
+.profile-description {
+  font-size: 1rem;
+  color: #b0b0b0;
+  line-height: 1.8;
+  text-align: justify; /* Alineación justificada */
+}
+
+/* Resaltado de palabras clave Profile Description */
+.profile-description strong {
+  color: rgba(255, 255, 255, 0.801); /* Color blanco para las palabras clave #d3b2b2 */
+  font-weight: bold;
+}
+
+
+/* Buttons Styling */
+.buttons .button {
+  display: inline-block;
+  background: linear-gradient(300deg, rgba(255, 255, 255, 0.051), #054BFF);
   color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 0.5rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 5px 15px rgba(5, 75, 255, 0.3);
 }
 
-.App-link {
-  color: #61dafb;
+.buttons .button:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(5, 75, 255, 0.5);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Section Title */
+.working-on h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+/* Estilos para los botones */
+.buttons {
+  text-align: center; /* Centrado de los botones */
+  margin: 20px 0;
+}
+
+.button {
+  padding: 10px 20px;
+  margin: 0 10px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #0056b3;
+}
+
+/* Estilos para la sección "Working on" */
+.working-on {
+  text-align: center; /* Centrado del contenido */
+  margin: 40px auto;
+  max-width: 800px;
+}
+
+.working-on h2 {
+  font-size: 1.8rem;
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+
+.working-on p {
+  font-size: 1rem;
+  color: #b0b0b0;
+  line-height: 1.8;
+  text-align: justify; /* Alineación justificada */
+}
+
+/* Resaltado de palabras clave */
+.working-on strong {
+  color: rgba(255, 255, 255, 0.801); /* Color blanco para las palabras clave #d3b2b2 */
+  font-weight: bold;
+}
+
+/* Gradient Buttons */
+.working-on .button.gradient {
+  background-color: #007bff;
+  margin: 0.3rem;
+  padding: 10px 20px;
+  display: inline-block;
+}
+
+/* Social Icons */
+.icons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.icons .button.gradient {
+  background-color: #007bff;
+  margin: 0.3rem;
+  padding: 10px 20px;
+  display: inline-block;
+}
+
+
+.icons .icon-link {
+  text-decoration: none;
+  font-size: 1.7rem;
+  color: white;
+  padding: 10px;
+  border-radius: 50%;
+  background: linear-gradient(37deg, rgba(255, 255, 255, 0.051), #007bff);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 5px 15px rgba(5, 75, 255, 0.3);
+}
+
+.icons .icon-link:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(44, 158, 250, 0.5);
 }

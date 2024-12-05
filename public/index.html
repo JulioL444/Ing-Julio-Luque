@@ -1,43 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
-
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  </body>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Perfil Profesional</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> <!-- Librería de íconos -->
+</head>
+<body>
+  <div class="wrapper">
+    <div class="profile-card">
+      <!-- Foto de perfil -->
+      <div class="profile-picture-container">
+        <img src="foto-perfil.jpg" alt="Foto de perfil" class="profile-picture">
+      </div>
+      <!-- Nombre y descripción -->
+      <h1 class="profile-name">Ing. Julio Isaac Luque A.</h1>
+      <p class="profile-description">
+        <strong>Systems and Computing Engineer</strong>, a degree awarded by the Technological University of Panama, member of the honorary chapter.
+      </p>
+      <!-- Botones principales -->
+      <div class="buttons">
+        <!-- Botón Curriculum que abre el PDF directamente -->
+        <a href="/tu-cv.pdf" class="button" target="_blank">
+          <i class="fas fa-file-alt"></i> <!-- Icono de CV -->
+          Curriculum
+        </a>
+        <!-- Botón Consulting -->
+        <a href="https://wa.me/+393397164178" class="button" target="_blank">
+          <i class="fas fa-phone-alt"></i> <!-- Icono de Teléfono -->
+          Consulting
+        </a>
+      </div>
+      <!-- Sección de proyectos -->
+      <div class="working-on">
+        <h2>Working on</h2>
+        <p>
+          Working in my free time as a freelancer in the area of <strong>​​artificial intelligence</strong> with classification and regression models using 
+          <strong>machine learning and deep learning</strong> <strong> techniques with Python. Front-end & Backend development, UX Research, computer science projects, wireless networks, writing scientific articles, and engineering prototyping</strong>. 
+          Handling agile methodologies such as the Spotify methodology, 
+          handling Github and Gitkraken,<strong> handling cloud computing with Azure DevOps, and experience in microservices architectures (MSA).</strong> 
+        </p>
+      </div>
+      <!-- Íconos de redes sociales -->
+      <div class="icons">
+        <a href="https://www.linkedin.com/in/julio-luque-b6b615245/" class="icon-link"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/JulioL444" class="icon-link"><i class="fab fa-github"></i></a>
+      </div>
+    </div>
+  </div>
+</body>
 </html>
