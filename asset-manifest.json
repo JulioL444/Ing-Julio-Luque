@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Ing-Julio-Luque/static/css/main.7fe42333.css",
+    "main.js": "/Ing-Julio-Luque/static/js/main.5979dc7d.js",
+    "static/js/453.c5cb811e.chunk.js": "/Ing-Julio-Luque/static/js/453.c5cb811e.chunk.js",
+    "index.html": "/Ing-Julio-Luque/index.html",
+    "main.7fe42333.css.map": "/Ing-Julio-Luque/static/css/main.7fe42333.css.map",
+    "main.5979dc7d.js.map": "/Ing-Julio-Luque/static/js/main.5979dc7d.js.map",
+    "453.c5cb811e.chunk.js.map": "/Ing-Julio-Luque/static/js/453.c5cb811e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7fe42333.css",
+    "static/js/main.5979dc7d.js"
+  ]
+}
